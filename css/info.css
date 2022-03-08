@@ -1,0 +1,26 @@
+body {
+    color: white;
+}
+.navbar {
+    position: relative;
+}
+h1 {
+    text-align: center;
+}
+p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+}
+h2 + p {
+    margin-top: 30px;
+}
+img {
+    margin: 30px auto;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    width: 80%;   
+}
+a:link {
+    text-decoration: none;
+}

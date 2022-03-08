@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Banker's Algorithm</title>
+        <link rel = "icon" href = 
+        "image/title_icon.jpeg" 
+                type = "image/x-icon"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/banker.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="index.html#page-top"><i class="fa fa-lock pr-2" aria-hidden="true"></i>Deadlock & Concurrency</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Algorithms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="sections pt-3 mt-3">
+            <section class="left mr-4">
+                <div class="container-contact100">
+                    <div class="wrap-contact100">
+                        <span class="contact100-form-title">
+                            BANKERS Algorithms
+                        </span>
+                        <label for="process">No. of Process:</label>
+                        <div class="wrap-input100">
+                            <input class="input100" type="text" id="process" placeholder="enter the number of the process">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <label for="resource">No. of Resources:</label>
+                        <div class="wrap-input100">
+                            <input class="input100" type="text" id="resource" placeholder="Enter space seperated number of Resources">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <label for="max">Max Need:</label>
+                        <div class="wrap-input100 pb-3 mb-4">
+                            <textarea class="input100" id="max" placeholder="Enter space seperated max need of resource of the particular process and enter the new process in new line"></textarea>
+                            <span class="focus-input100"></span>
+                        </div>
+                        <label for="allocated">allocted:</label>
+                        <div class="wrap-input100 pb-3 mb-4">
+                            <textarea class="input100" id="allocated" placeholder="Enter space seperated allocated Resources of the particular process and enter the new process in new line"></textarea>
+                            <span class="focus-input100"></span>
+                        </div>
+                        <button class="contact100-form-btn submit" onclick = "banker()">
+                            <span>
+                                Submit
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="right">
+                <span class="contact100-form-title pt-3 pb-0">Output</span>
+                <div class="contact100-form-title pt-3 pb-0 human-heart" id = 'ans'></div>
+                <div class="contact100-form-title pt-3 pb-0" id = 'needinfo'></div>
+                <table class="table table-dark pt-3 pb-0" id='needtable'></table>
+                <div class="contact100-form-title pt-3 pb-0" id = 'allocatedinfo'></div>
+                <table class="table table-dark pt-3 pb-0" id='alloctedtable'></table>
+            </section>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/banker.js"></script>
+    </body>
+</html>

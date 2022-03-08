@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- <meta name="description" content="" />
+        <meta name="author" content="" /> -->
+        <title>Deadlock & Concurrency</title>
+        <link rel = "icon" href = 
+        "title_icon.jpeg" 
+                type = "image/x-icon">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <!-- <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"></script> -->
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" /> -->
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="css/styles1.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fas fa-lock pr-3" aria-hidden="true"></i></i>Deadlock & Concurrency</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li> -->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Algorithms</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+     
+        <!-- Algos-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <!--DEADLOCK-->
+                    <div class="col-lg-12 col-sm-6 text-center test2 pic10">
+                        <div>
+                            <h1 class="text-uppercase text-white font-weight-bold mb-0"> </h1>
+                            <hr class="divider my-4" />
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-6 text-center test pic1">
+                        <div>
+                            <h3 class="text-uppercase text-white font-weight-bold mb-0">BANKER'S ALGORITHM</h3>
+                            <div class="hidden1" id="show">
+                                <div class="container">
+                                    <pre style="text-align: left;">
+                                        <p class="text-white justify-content-center">
+Tests for safety by simulating the allocation for predetermined maximum possible amounts of all resources, then makes an “s-state” check to test for possible activities..
+
+Characteristics of Banker's Algorithm:
+1. Keep many resources that satisfy the requirement of at least one client
+2. Whenever a process gets all its resources, it needs to return them in a restricted period.
+3. When a process requests a resource, it needs to wait
+4. The system has a limited number of resources
+5. Advance feature for max resource allocation
+
+Disadvantage of Banker's algorithm:
+1. Does not allow the process to change its Maximum need while processing
+2. It allows all requests to be granted in restricted time, but one year is a fixed period for that.
+3. All processes must know and state their maximum resource needs in advance.
+                                        </p>
+                                    </pre>
+                                </div>
+                                <a class="btn btn-light btn-l" href="#">More Info</a>
+                                <a class="btn btn-light btn-l" href="banker.html">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--CONCURRENCY-->
+                    <div class="col-lg-12 col-sm-6 text-center test2 pic2">
+                        <div>
+                            <h1 class="text-uppercase text-white font-weight-bold mb-0">CONCURRENCY</h1>
+                            <hr class="divider my-4" />
+                            <div class="hidden1" id="show">
+                                <div class="container">
+                                    <p class="text-white">As the name suggests, it replaces the newest page that arrived at last in the main memory.</p>
+                                </div>
+                                <a class="btn btn-light btn-l" href="#">More Info</a>
+                                <a class="btn btn-light btn-l" href="lifo1.html">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-6 text-center test pic3">
+                        <div>
+                            <h3 class="text-uppercase text-white font-weight-bold mb-0">LOCK VARIALBE</h3>
+                            <div class="hidden1" id="show">
+                                <div class="container">
+                                    <pre style='text-align: left;'>
+                                        <p class="text-white">
+Simplest synchronization mechanism-implemented in User mode-used for more than two processes.// two values-0,1. 0 means critical section is vacant and 1 means critical section is occupied.
+
+Analysis of Lock Variable:
+The lock variable mechanism doesn't provide Mutual Exclusion in some of the cases. This can be better described by looking at the pseudo code by the Operating System point of view I.E. Assembly code of the program. Let's convert the Code into the assembly language.
+
+Load Lock, R0
+CMP R0, #0
+JNZ Step 1
+Store #1, Lock
+Store #0, Lock
+
+The problem with the lock variable mechanism is that, at the same time, more than one process can see the vacant tag and more than one process can enter in the critical section. Hence, the lock variable doesn't provide the mutual exclusion that's why it cannot be used in general.
+Since, this method is failed at the basic step; hence, there is no need to talk about the other conditions to be fulfilled.
+                                        </p>
+                                    </pre>
+                                </div>
+                                <a class="btn btn-light btn-l" href="#">More Info</a>
+                                <a class="btn btn-light btn-l" href="lockvari.html">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-6 text-center test pic4">
+                        <div>
+                            <h3 class="text-uppercase text-white font-weight-bold mb-0">TEST SET LOCK</h3>
+                            <div class="hidden1" id="show">
+                                <div class="container">
+                                    <pre style='text-align: left;'>
+                                        <p class="text-white">
+Synchronization mechanism- uses test and set instructions to provide the synchronization among the processes executing concurrently.
+
+Analysis of Test And Set Lock:
+
+Mutual Exclusion:
+Mutual Exclusion is guaranteed in TSL mechanism since a process can never be preempted just before setting the lock variable. Only one process can see the lock variable as 0 at a particular time and that's why, the mutual exclusion is guaranteed.
+
+Progress:
+According to the definition of the progress, a process which doesn't want to enter in the critical section should not stop other processes to get into it. In TSL mechanism, a process will execute the TSL instruction only when it wants to get into the critical section. The value of the lock will always be 0 if no process doesn't want to enter into the critical section hence the progress is always guaranteed in TSL.
+
+Bounded Waiting:
+Bounded Waiting is not guaranteed in TSL. Some process might not get a chance for so long. We cannot predict for a process that it will definitely get a chance to enter in critical section after a certain time.
+
+Architectural Neutrality:
+TSL doesn't provide Architectural Neutrality. It depends on the hardware platform. The TSL instruction is provided by the operating system. Some platforms might not provide that. Hence it is not Architectural natural.
+                                        </p>
+                                    </pre>
+                                </div>
+                                <a class="btn btn-light btn-l" href="#">More Info</a>
+                                <a class="btn btn-light btn-l" href="test_set.html">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-6 text-center test pic5">
+                        <div>
+                            <h3 class="text-uppercase text-white font-weight-bold mb-0">TURN VARIABLE</h3>
+                            <div class="hidden1" id="show">
+                                <div class="container">
+                                    <pre style='text-align: left;'>
+                                        <p class="text-white">
+Software mechanism implemented at user mode-only for two processes. It is a lock shared by two processes.
+
+Analysis of Turn Variable approach
+
+1.Mutual Exclusion
+The strict alternation approach provides mutual exclusion in every case. This procedure works only for two processes. The pseudo code is different for both of the processes. The process will only enter when it sees that the turn variable is equal to its Process ID otherwise not Hence No process can enter in the critical section regardless of its turn.
+
+2.Progress
+Progress is not guaranteed in this mechanism. If P0 doesn't want to get enter into the critical section on its turn then P1 got blocked for infinite time. P1 has to wait for so long for its turn since the turn variable will remain 0 until P0 assigns it to 1.
+
+3.Portability
+The solution provides portability. It is a pure software mechanism implemented at user mode and doesn't need any special instruction from the Operating System.
+                                        </p>
+                                    </pre>
+                                </div>
+                                <a class="btn btn-light btn-l" href="#">More Info</a>
+                                <a class="btn btn-light btn-l" href="turnvari.html">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-6 text-center test pic6">
+                        <div>
+                            <h3 class="text-uppercase text-white font-weight-bold mb-0">PETERSON METHOD</h3>
+                            <div class="hidden1" id="show">
+                                <div class="container">
+                                    <pre style="text-align: left;">
+                                        <p class="text-white">
+Concurrent programming algorithm for mutual exclusion that allows two or more processes to share a single-use resource without conflict, using only shared memory for communication.
+
+Analysis of Peterson Algorithm approach:
+
+1.Mutual Exclusion:
+The method provides mutual exclusion for sure. In entry section, the while condition involves the criteria for two variables therefore a process cannot enter in the critical section until the other process is interested and the process is the last one to update turn variable.
+
+2.Progress:
+An uninterested process will never stop the other interested process from entering in the critical section. If the other process is also interested then the process will wait.
+
+3.Bounded waiting:
+The interested variable mechanism failed because it was not providing bounded waiting. However, in Peterson solution, A deadlock can never happen because the process which first sets the turn variable will enter in the critical section for sure. Therefore, if a process is preempted after executing line number 4 of the entry section then it will definitely get into the critical section in its next chance.
+
+4.Portability:
+This is the complete software solution and therefore it is portable on every hardware.
+
+
+                                        </p>
+                                    </pre>
+                                </div>
+                                <a class="btn btn-light btn-l" href="#">More Info</a>
+                                <a class="btn btn-light btn-l" href="peterson.html">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-6 text-center test pic7">
+                        <div>
+                            <h3 class="text-uppercase text-white font-weight-bold mb-0">PRODUCER CONSUMER</h3>
+                            <div class="hidden1" id="show">
+                                <div class="container">
+                                    <pre style="text-align: left;">
+                                        <p class="text-white">
+Synchronization problem. The producer produces items and enters them into the fixed size buffer. The consumer removes the items from the buffer and consumes them.
+
+Analysis of Producer Consumer approach:
+In computing, the producer-consumer problem (also known as the bounded-buffer problem) is a classic example of a multi-process synchronization problem. The problem describes two processes, the producer and the consumer, which share a common, fixed-size buffer used as a queue.
+The producer’s job is to generate data, put it into the buffer, and start again.
+At the same time, the consumer is consuming the data (i.e. removing it from the buffer), one piece at a time.
+
+Problem:
+To make sure that the producer won’t try to add data into the buffer if it’s full and that the consumer won’t try to remove data from an empty buffer.
+
+Solution:
+The producer is to either go to sleep or discard data if the buffer is full. The next time the consumer removes an item from the buffer, it notifies the producer, who starts to fill the buffer again. In the same way, the consumer can go to sleep if it finds the buffer to be empty. The next time the producer puts data into the buffer, it wakes up the sleeping consumer. An inadequate solution could result in a deadlock where both processes are waiting to be awakened.
+                                        </p>
+                                    </pre>
+                                </div>
+                                <a class="btn btn-light btn-l" href="#">More Info</a>
+                                <a class="btn btn-light btn-l" href="producer.html">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--SEMAPHORE-->
+                    <div class="col-lg-12 col-sm-6 text-center test2 pic8">
+                        <div>
+                            <h1 class="text-uppercase text-white font-weight-bold mb-0">SEMAPHORE</h1>
+                            <hr class="divider my-4" />
+                            <div class="hidden1" id="show">
+                                <div class="container">
+                                    <p class="text-white">As the name suggests, this algorithm randomly replaces any page.</p>
+                                </div>
+                                <a class="btn btn-light btn-l" href="#">More Info</a>
+                                <a class="btn btn-light btn-l" href="#">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-6 text-center test pic9">
+                        <div>
+                            <h2 class="text-uppercase text-white font-weight-bold mb-0">COUNTING SEMAPHORE</h2>
+                            <div class="hidden1" id="show">
+                                <div class="container">
+                                    <pre style="text-align: left;">
+                                        <p class="text-white">
+It uses a count that helps task to be acquired or released numerous times.
+Analysis of Counting Semaphore approach:
+1.  In this mechanism, the entry and exit in the critical section are performed on the basis of the value of counting semaphore. The value of counting semaphore at any point of time indicates the maximum number of processes that can enter in the critical section at the same time.
+2.  A process which wants to enter in the critical section first decrease the semaphore value by 1 and then check whether it gets negative or not. If it gets negative then the process is pushed in the list of blocked processes (i.e. q) otherwise it gets enter in the critical section.
+3.  When a process exits from the critical section, it increases the counting semaphore by 1 and then checks whether it is negative or zero. If it is negative then that means that at least one process is waiting in the blocked state hence, to ensure bounded waiting, the first process among the list of blocked processes will wake up and gets enter in the critical section.
+4.  The processes in the blocked list will get waked in the order in which they slept. If the value of counting semaphore is negative then it states the number of processes in the blocked state while if it is positive then it states the number of slots available in the critical section.
+5.  To implement mutual exclusion, the value of counting semaphore is initialized with 1.
+6.  It ensures that only one process can be present in the critical section at any given time.
+                                        </p>
+                                    </pre>
+                                </div>
+                                <a class="btn btn-light btn-l" href="#">More Info</a>
+                                <a class="btn btn-light btn-l" href="counting_semaphore.html">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-6 text-center test pic10">
+                        <div>
+                            <h2 class="text-uppercase text-white font-weight-bold mb-0">BINARY SEMAPHORE</h2>
+                            <div class="hidden1" id="show">
+                                <div class="container">
+                                   <pre style="text-align: left;">
+                                    <p class="text-white">
+Has 0 and 1 value.  The wait operation only works when the semaphore is 1 and the signal operation succeeds when semaphore is 0
+
+Analysis of Binary semaphore approach:
+1. A binary semaphore has two components-
+    a.  An integer value which can be either 0 or 1.
+    b.  An associated waiting list (usually a queue).
+2. The waiting list of binary semaphore contains the processes that got blocked when trying to enter the critical section.
+3. In waiting list, the blocked processes are put to sleep.
+4. The waiting list is usually implemented using a queue data structure.
+5. Using a queue as waiting list ensures bounded waiting.
+6. This is because the process which arrives first in the waiting queue gets the chance to enter the critical section first.
+7. The wait operation is executed when a process tries to enter the critical section.
+8. The signal operation is executed when a process takes exit from the critical section.
+9. Binary semaphores are mainly used for two purposes-
+    a. To ensure mutual exclusion.
+    b. To implement order in which the process must execute.
+                                    </p>
+                                   </pre>
+                                </div>
+                                <a class="btn btn-light btn-l" href="#">More Info</a>
+                                <a class="btn btn-light btn-l" href="binary_semaphore.html">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

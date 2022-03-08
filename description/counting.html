@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- <meta name="description" content="" />
+        <meta name="author" content="" /> -->
+        <title>counting semaphore description</title>
+        <link rel = "icon" href = 
+        "../image/title_icon.jpeg" 
+                type = "image/x-icon">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <!-- <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"></script> -->
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" /> -->
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fas fa-home pr-3" aria-hidden="true"></i></i>OS Virtual Lab</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">Home</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#about">About</a></li>
+                        
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li> -->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#portfolio">Algorithms</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+ 
+        <div class="container col-lg-12 col-sm-6 text-center">
+            <div>
+                <h1 class="text-uppercase text-white font-weight-bold" style="font-weight: bolder;">COUNTING SEMAPHORE</h1>
+                <br><br><br>
+                <div class="hidden1" id="show">
+                    <div class="container" style="text-align: left;">
+                            <p class="text-white justify-content-center">
+                                It uses a count that helps task to be acquired or released numerous times.<br>
+                                <h4 style="color: white; font-weight: bold;">Analysis of Counting Semaphore approach:</h4>
+                                <p style="color: white;"> 
+                                    <br>1.  In this mechanism, the entry and exit in the critical section are performed on the basis of the value of counting semaphore. The value of counting semaphore at any point of time indicates the maximum number of processes that can enter in the critical section at the same time.<br>
+                                    <br>2.  A process which wants to enter in the critical section first decrease the semaphore value by 1 and then check whether it gets negative or not. If it gets negative then the process is pushed in the list of blocked processes (i.e. q) otherwise it gets enter in the critical section.<br>
+                                    <br>3.  When a process exits from the critical section, it increases the counting semaphore by 1 and then checks whether it is negative or zero. If it is negative then that means that at least one process is waiting in the blocked state hence, to ensure bounded waiting, the first process among the list of blocked processes will wake up and gets enter in the critical section.<br>
+                                    <br>4.  The processes in the blocked list will get waked in the order in which they slept. If the value of counting semaphore is negative then it states the number of processes in the blocked state while if it is positive then it states the number of slots available in the critical section.<br>
+                                    <br>5.  To implement mutual exclusion, the value of counting semaphore is initialized with 1.<br>
+                                    <br>6.  It ensures that only one process can be present in the critical section at any given time.<br>
+                                </p>
+                            </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <h3>
+                <a href="../counting_semaphore.html" class="button00" style="font-weight: bold;">Demo</a>
+            </h3>
+            <h3 class="text-uppercase text-white font-weight-bold py-3">Steps</h3>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <img src="./img/countin.jpg" class="img-fluid" alt="Lights" style="width:100%">
+                </div>
+                <div class="col-md-6" style="margin-top: 10%;">
+                    <h3 class="text-uppercase text-white font-weight-bold text-center pb-3" style="font-weight: bolder;">Input</h3> 
+                    <p style="color: white;">
+                        Enter the integer value that is the number of process required and the number of semaphore, according to that the initial state will be filled.<br><br>
+                        Than for process the process click on the repective process and than it will go to the appropriate state which is availabe according to algorithm.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" style="margin-top: 10%;">
+                    <h3 class="text-uppercase text-white font-weight-bold text-center pb-3" style="font-weight: bolder;">Output</h3> 
+                    <p style="color: white;">
+                        According to the user input on clicking the process the output will be shown by placing the process button on appropriate places according to the algorithm of counting semaphore. 
+                    </p>
+                    <p style="color: white;">
+                        Also the current state of the critical state is shown above the added state according to the number of process in the critical state.  
+                    </p>
+                </div>
+                <div class="col-md-6">
+                      <img src="./img/countout.jpg" class="img-fluid" alt="Lights" style="width:100%">
+                </div>
+            </div>
+        </div>
+            <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="app.js"></script>
+    </body>
+</html>

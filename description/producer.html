@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- <meta name="description" content="" />
+        <meta name="author" content="" /> -->
+        <title>producer consumer description</title>
+        <link rel = "icon" href = 
+        "../image/title_icon.jpeg" 
+                type = "image/x-icon">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <!-- <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"></script> -->
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" /> -->
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fas fa-home pr-3" aria-hidden="true"></i></i>OS Virtual Lab</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">Home</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#about">About</a></li>
+                        
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li> -->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#portfolio">Algorithms</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+ 
+        <div class="container col-lg-12 col-sm-6 text-center">
+            <div>
+                <h1 class="text-uppercase text-white font-weight-bold" style="font-weight: bolder;">PRODUCER CONSUMER</h1>
+                <br><br><br>
+                <div class="hidden1" id="show">
+                    <div class="container" style="text-align: left;">
+                            <p class="text-white justify-content-center">
+                                Synchronization problem. The producer produces items and enters them into the fixed size buffer. The consumer removes the items from the buffer and consumes them.<br>
+                            </p>
+                            <h4 style="color: white; font-weight: bold;">Analysis of Producer Consumer approach: </h4><br>
+                                <p style="color: white;"> 
+                                    In computing, the producer-consumer problem (also known as the bounded-buffer problem) is a classic example of a multi-process synchronization problem. The problem describes two processes, the producer and the consumer, which share a common, fixed-size buffer used as a queue.
+                                    The producer’s job is to generate data, put it into the buffer, and start again.
+                                    At the same time, the consumer is consuming the data (i.e. removing it from the buffer), one piece at a time.
+                                    <br></br>
+                                </p>    
+                            <h4 style="color: white; font-weight: bold;">Problem: </h4><br>
+                                <p style="color: white;"> 
+                                    To make sure that the producer won’t try to add data into the buffer if it’s full and that the consumer won’t try to remove data from an empty buffer.
+                                </p><br></br>
+                            <h4 style="color: white; font-weight: bold;">Solution:</h4><br>
+                            <p style="color: white;"> The producer is to either go to sleep or discard data if the buffer is full. The next time the consumer removes an item from the buffer, it notifies the producer, who starts to fill the buffer again. In the same way, the consumer can go to sleep if it finds the buffer to be empty. The next time the producer puts data into the buffer, it wakes up the sleeping consumer. An inadequate solution could result in a deadlock where both processes are waiting to be awakened.
+                            </p><br>
+                    </div>
+                    
+                </div>
+            </div>
+            <h3>
+                <a href="../producer.html" class="button00" style="font-weight: bold;">Demo</a>
+            </h3>
+            <h3 class="text-uppercase text-white font-weight-bold py-3">Steps</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./img/producer_input_3.png" class="img-fluid" alt="Lights" style="width:100%">
+                </div>
+                <div class="col-md-6" style="margin-top: 10%;">
+                    <h3 class="text-uppercase text-white font-weight-bold text-center pb-3" style="font-weight: bolder;">Input</h3> 
+                    <p style="color: white;">
+                        Enter the space, number of producer and number of consumer respectively.<br><br>
+                        For producing process click producer and for consuming process click consumer and there is also a reset button to reset whole page. 
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" style="margin-top: 10%;">
+                    <h3 class="text-uppercase text-white font-weight-bold text-center pb-3" style="font-weight: bolder;">Output</h3> 
+                    <p style="color: white;">
+                            According to the user input the process will be produced if there is a space or alert will be shown.
+                    </p>
+                    <p style="color: white;">
+                        If there are less process than the number of consumer than alert will be shown else the process will be consumed.   
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./img/producer_input_3.png" class="img-fluid" alt="Lights" style="width:100%">
+                </div>
+            </div>
+        </div>        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="app.js"></script>
+    </body>
+</html>
