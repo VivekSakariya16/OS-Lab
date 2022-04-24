@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+    /* color: black; */
+}
+nav{
+    height: 10vh;
+    position: fixed;
+    background-color: black;
+}
+nav div ul li a{
+    color: black !important;
+    
+}
+nav div a{
+    color: black !important;
+    
+}
+.content{
+    width: 98vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.content h1{
+    margin-top: 10vh;
+    padding-left: 12vw;
+    width: 50vw;
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+}
+img{
+    padding: 3vw;
+}
+.content img{
+    height: 80vh;
+    width: 80vh;
+        
+}
+
+.content p{
+    padding: 2vw 5vw;
+    width: 80vw;
+    
+    font-size: larger;
+}
+
+.content button{
+    font-size: larger;
+    height: 5vh;
+    margin: 2vw;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+.output{
+    background-color: white;
+
+}
+.output textarea{
+    font-size: larger;
+    font-weight: 500;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 3px 6px;
+}

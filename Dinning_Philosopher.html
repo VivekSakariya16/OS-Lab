@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" href = 
+        "image/title_icon.jpeg" 
+        type = "image/x-icon">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/Dinning_Philosopher.css">
+        <link rel="stylesheet" href="css/utils.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="/js/phil_final.js"></script> -->
+        <script src="/js/phil_final.js"></script>
+        <title>OS LAB PROJECT</title>
+    </head>
+    
+    <body>
+        <!-- <nav class="navigation max-width-1 m-auto">
+            <div class="nav-left">
+                <a href="/">
+                    <span><img src="img/logo.png" width="94px" alt=""></span>
+                </a>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <form action="search.html" method="get">
+                    <input class="form-input" type="text" name="query" placeholder="Article Search">
+                    <button class="btn">Search</button>
+                </form>
+                
+            </div>
+            
+        </nav>
+    -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fas fa-lock pr-3" aria-hidden="true"></i></i>Deadlock & Concurrency</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../home.html">Home</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li> -->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Algorithms</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+        <h1>Dinning Philosopher</h1>
+        <img src="\image\Dining-Philosophers-Problem.png" alt="">
+        <p> The dining philosopher's problem is the classical problem of synchronization which says that Five philosophers are sitting around a circular table and their job is to think and eat alternatively. A bowl of noodles is placed at the center of the table along with five chopsticks for each of the philosophers. To eat a philosopher needs both their right and a left chopstick. A philosopher can only eat if both immediate left and right chopsticks of the philosopher is available. In case if both immediate left and right chopsticks of the philosopher are not available then the philosopher puts down their (either left or right) chopstick and starts thinking again.
+            
+            The dining philosopher demonstrates a large class of concurrency control problems hence it's a classic synchronization problem.</p>
+            <button onclick="run()" >START</button>
+            <div class="output">
+                <textarea name="" id="aaa" cols="120" rows="18">
+                    
+                </textarea>
+                
+            </div>
+            
+        </div>
+        
+    </body>
+    </html>

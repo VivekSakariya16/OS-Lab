@@ -7,7 +7,7 @@ html {
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
-  border-color: #2bc72b;
+  border-color: #000053;
 }
 
 hr.light {
@@ -66,10 +66,10 @@ hr.light {
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover,
 #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #2bc72b;
+  color: #000053;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #2bc72b !important;
+  color: #000053 !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -100,13 +100,13 @@ hr.light {
     color: #212529;
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
-    color: #2bc72b;
+    color: #000053;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
     color: #212529;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-    color: #2bc72b;
+    color: #000053;
   }
 }
 
