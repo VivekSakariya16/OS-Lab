@@ -9,15 +9,19 @@ body{
 nav{
     height: 10vh;
     position: fixed;
-    background-color: black;
+   
 }
 nav div ul li a{
     color: black !important;
     
 }
 nav div a{
-    color: black !important;
+    color: white !important;
     
+}
+
+nav{
+    background-color: white !important;
 }
 .content{
     width: 98vw;
